@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap");
+@import "general";
+@import "variables";
+@import "media";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  background-color: $Bacg-color;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+  }
+
+  a:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 55px;
+    background-color: $But-color;
+    color: white;
+    font-size: 0.8em;
+    border-radius: 3px;
+  }
+}
+.Adv {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background-image: url($Adv-photo);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  @media (max-width: 600px) {
+    h3 {
+      max-width: 300px;
+      text-align: center;
+    }
+  }
+  .Signup {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      width: 300px;
+    }
+
+    input[type="text"] {
+      width: 300px;
+      /*border-radius: 3px;*/
+      border: none;
+      padding: 5px;
+      @media (max-width: 600px) {
+        width: 96%;
+        margin: auto;
+      }
+    }
+
+    input[type="submit"] {
+      box-sizing: border-box;
+      border-radius: 3px;
+      width: fit-content;
+      background-color: $But-color;
+      color: white;
+      border: none;
+      padding: 5px;
+      margin-left: 10px;
+      @media (max-width: 600px) {
+        width: 100%;
+        margin: auto;
+        margin-top: 5px;
+      }
+    }
+  }
+  input[type="submit"]:hover {
+    opacity: 0.5;
+  }
+}
+.Points {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $Bac-color1;
+  justify-content: space-around;
+  align-items: center;
+
+  .Img {
+    height: 50px;
+    width: 50px;
+    &.Img4 {
+      background-image: url($Img4-photo);
+    }
+    &.Img5 {
+      background-image: url($Img5-photo);
+    }
+    &.Img6 {
+      background-image: url($Img6-photo);
+    }
+  }
+  .Int {
+    height: 300px;
+    align-items: center;
+  }
+  .SQRE {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    aspect-ratio: 4/3;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+
+  p {
+    text-align: center;
+    font-size: ($Fsizep-points);
+    opacity: 0.6;
+  }
+  h3 {
+    text-align: center;
+    max-width: 400px;
+  }
+}
+.Block {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .box1 {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+      text-align: left;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: left;
+      padding: 20px;
+      margin-top: 10px;
+      opacity: 0.6;
+    }
+  }
+  .box2 {
+    width: 50%;
+    height: 300px;
+    background-image: url($box2-photo);
+    background-size: cover;
+    background-position: center;
+  }
+  .box4 {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+      text-align: left;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: left;
+      padding: 20px;
+      margin-top: 10px;
+      opacity: 0.6;
+    }
+  }
+  .box3 {
+    width: 50%;
+    height: 300px;
+    background-image: url($box4-photo);
+    background-size: cover;
+    background-position: center;
+  }
+  .box5 {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+      text-align: left;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: left;
+      padding: 20px;
+      margin-top: 10px;
+      opacity: 0.6;
+    }
+  }
+  .box6 {
+    width: 50%;
+    height: 300px;
+    background-image: url($box6-photo);
+    background-size: cover;
+    background-position: center;
+  }
+}
+.About {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $Bac-color1;
+  justify-content: space-around;
+  align-items: center;
+
+  .Int {
+    height: 300px;
+    align-items: center;
+  }
+  .SQRE {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    &.Int:nth-of-type(1) p {
+      margin-bottom: 25px;
+    }
+    .Img {
+      height: 140px;
+      width: 140px;
+      border-radius: 70px;
+
+      &.Img1 {
+        background-image: url($Img1-photo);
+      }
+      &.Img2 {
+        background-image: url($Img2-photo);
+      }
+      &.Img3 {
+        background-image: url($Img3-photo);
+      }
+    }
+    p {
+      text-align: center;
+      font-size: ($Fsizep-points);
+      opacity: 0.6;
+    }
+    h3 {
+      text-align: center;
+      max-width: 400px;
+    }
+  }
+}
+Footer {
+  display: flex;
+  max-width: 100%;
+  height: 100px;
+  justify-content: space-between;
+
+  .Footer {
+    display: grid !important;
+    width: 400px;
+    grid-template-columns: 0.7fr 0.3fr 0.8fr 0.3fr 1fr 0.3fr 1fr;
+    grid-template-rows: 30px 30px;
+    align-items: center;
+    justify-items: center;
+    margin-top: 30px;
+    font-size: 13px;
+    padding-left: 30px;
+    a {
+      text-decoration: none;
+      color: $But-color;
+      justify-items: center;
+    }
+    p {
+      font-size: 10px;
+      opacity: 0.6;
+    }
+    .Copyr {
+      grid-column: span 4;
+    }
+  }
+  .Social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 100%;
+    margin-right: 50px;
+    .Img {
+      height: 20px;
+      width: 25px;
+      &.Social1 {
+        background-image: url($Soc1-photo);
+      }
+      &.Social2 {
+        background-image: url($Soc2-photo);
+      }
+      &.Social3 {
+        background-image: url($Soc3-photo);
+      }
+    }
+  }
+}
