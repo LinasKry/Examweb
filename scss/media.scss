@@ -28,4 +28,13 @@
   .About {
     flex-direction: column !important;
   }
+  footer {
+    justify-content: center !important;
+  }
+  Footer .Footer .Copyr {
+    grid-column: span 7 !important;
+  }
+  Footer .Social {
+    margin: 0px !important;
+  }
 }
