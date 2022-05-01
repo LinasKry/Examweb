@@ -3,6 +3,7 @@
   .Adv,
   .Points,
   .Block,
+  .H2,
   .About,
   Footer {
     width: 95% !important;
@@ -22,9 +23,27 @@
   .box:nth-child(5) {
     order: 6;
   }
+  /*.Points {
+    flex-direction: column !important;
+  }
+  About {
+    flex-direction: column !important;
+  }
+  footer {
+    justify-content: center !important;
+  }
+  Footer .Footer .Copyr {
+    grid-column: span 7 !important;
+  }
+  Footer .Social {
+    margin: 0px !important;
+  }*/
+}
+@media (max-width: 700px) {
   .Points {
     flex-direction: column !important;
   }
+
   .About {
     flex-direction: column !important;
   }
@@ -34,6 +53,11 @@
   Footer .Footer .Copyr {
     grid-column: span 7 !important;
   }
+  Footer .Social {
+    margin-left: 30px !important;
+  }
+}
+@media (max-width: 600px) {
   Footer .Social {
     margin: 0px !important;
   }
